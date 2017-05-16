@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./calculator.css">
+<script src="./calculator.js"></script>
+<!-- sourced fom https://codepen.io/ckm100/pen/dPLyjZ-->
+<title>CITS5501 Automation Assignment</title>
+</head>
+<body>
+
+<h1>CITS5501 Automation Assignment</h1>
+
+<p><b>This project may be done individually or as pairs. It is due on Firday May 19 at 5pm. 
+  All source code and the report should be submitted via cssubmit by the date</b></p>
+
+<h2>Description</h2>
+
+
+<p>
+You have been hired by ACME Calculators to implement an automatic quality assurance process for their product. 
+They have recently transitioned from hardware calculators to software calculators, and despite the numerous flaws in their business model, 
+are persisting with the aim of providing the best calculator widget the world has ever seen.
+They have two products: an online calculator written in javascript and HTML (and hosted on this very page), and a <a href="./calculator.py">python class</a> 
+for performing calculator operations. They expect these two classes to be conformant so that test cases can be written and designed for both simultaneously.
+
+
+<p>
+You have been ask to build a quality assurance process around these software assets, given the following requirements:
+<ul>
+  <li> The quality assurance process should include tests at both the unit level and the user level. It may also stipulate other qulity control processes such as periodic reviews, or assessments via code metrics.
+  <li> The quality assurance process should have well defined metrics that can be tracked as the project proceeds.
+  <li> Whereever possible, the tests should be automated.
+  <li> The should be a well defined set of procedures for assuring the quality of the software. This should stipulate the frequency of testing and review, the coverage of tests, and the reporting and tracking of quality and test metrics.
+</ul>
+  
+<p>
+For this project you should produce:
+<ol>
+  <li> (40%) A test suite including
+  <ul> 
+    <li> Unit tests, using unittest for the python code (15%).
+    <li> User tests, using selenium for the web code (15%).
+    <li> Clear instructions for setting up the test environment, and automatically executing the tests (10%)
+  </ul>
+  <li> (60%) A quality assurance manual including 
+  <ul>
+    <li> Test design process. Describe the software models, and coverage goals used to design your test suites (20%).
+    <li> Test and software metrics. Describe the important software metrics and test metrics that contribute to your quality assurance process (10%) 
+    <li> A clear description of any other quality assurance/testing techniques that should be used in conjunction with your automated tests (10%)
+    <li> A description on how and when the tests should be run, and a current test report, showing defects and recommended improvements (10%).
+    <li> A list  of assumptions made in designing the quality assurance process (5%).
+    <li> A list of any references and resources used (5%).
+  </ul>
+</ol> 
+
+
+<div id="background"><!-- Main background -->
+             
+        <div id="result"></div>
+             
+         <div id="main">
+             <div id="first-rows">
+              <button class="del-bg" id="delete">Del</button>
+                 <button value="%" class="btn-style operator opera-bg fall-back">%</button>
+                 <button value="+" class="btn-style opera-bg value align operator">+</button>
+                 </div>
+                 
+               <div class="rows">
+             <button value="7" class="btn-style num-bg num first-child">7</button>
+                 <button value="8" class="btn-style num-bg num">8</button>
+                 <button value="9" class="btn-style num-bg num">9</button>
+                 <button value="-" class="btn-style opera-bg operator">-</button>
+                 </div>
+                 
+                 <div class="rows">
+                 <button value="4" class="btn-style num-bg num first-child">4</button>
+                 <button value="5" class="btn-style num-bg num">5</button>
+                 <button value="6" class="btn-style num-bg num">6</button>
+                 <button value="*" class="btn-style opera-bg operator">x</button>
+                 </div>
+                 
+                 <div class="rows">
+                 <button value="1" class="btn-style num-bg num first-child">1</button>
+                 <button value="2" class="btn-style num-bg num">2</button>
+                 <button value="3" class="btn-style num-bg num">3</button>
+                 <button value="/" class="btn-style opera-bg operator">/</button>
+                 </div>
+                 
+                 <div class="rows">
+                 <button value="0" class="num-bg zero" id="delete">0</button>
+                 <button value="." class="btn-style num-bg period fall-back">.</button>
+                 <button value="=" id="eqn-bg" class="eqn align">=</button>
+                 </div>
+                
+             </div>
+         
+         </div>
+</body>        
