@@ -24,26 +24,15 @@ class Path1(unittest.TestCase):
         driver.get(self.base_url + "/units/CITS5501/Assignments/calculator.html")
         g = createTestGraph()
         ppaths = getPrimePaths(g)
-        last = None
+        last = ppaths[0][0]
+        executeCmd(driver, last)
         for i in range(len(ppaths)):
-            if ppaths[i][0] == last || last == None:
-                for j in range(len(ppaths[i])):
-                    if ppaths[i][j] == 'num':
-                        clickNum(driver)
-                    elif ppaths[i][j] == 'op':
-                        clickOp(driver)
-                    elif ppaths[i][j] == 'eql':
-                        driver.find_element_by_id("eqn-bg").click()
-                    elif ppaths[i][j] == 'del':
-                        driver.find_element_by_id("delete").click()
-                    elif ppaths[i][j] == 'zero':
-                        driver.find_element_by_css_selector("div.rows > #delete").click()
-                    elif ppaths[i][j] == 'period':
-                        driver.find_element_by_xpath("//button[@value='.']").click()
-                    elif ppaths[i][j] == '0':
-                        time.sleep(1)
+            if ppaths[i] != None and ppaths[i][0] == last:
+                for j in range(1,len(ppaths[i])):
+                    executeCmd(driver, ppaths[i][j])
                     if j == len(ppaths[i])-1:
                         last = ppaths[i][j]
+                        ppaths[i] = None
                     time.sleep(0.5)
     
     def is_element_present(self, how, what):
@@ -71,6 +60,21 @@ class Path1(unittest.TestCase):
         self.driver.quit()
         self.assertEqual([], self.verificationErrors)
 
+def executeCmd(driver, cmd):
+    if cmd == 'num':
+        clickNum(driver)
+    elif cmd == 'op':
+        clickOp(driver)
+    elif cmd == 'eql':
+        driver.find_element_by_id("eqn-bg").click()
+    elif cmd == 'del':
+        driver.find_element_by_id("delete").click()
+    elif cmd == 'zero':
+        driver.find_element_by_css_selector("div.rows > #delete").click()
+    elif cmd == 'period':
+        driver.find_element_by_xpath("//button[@value='.']").click()
+    elif cmd == '0':
+        time.sleep(1)
 
 def is_a_in_x(A, X):
   for i in xrange(len(X) - len(A) + 1):
@@ -143,13 +147,13 @@ def createTestGraph():
     print 'graph for basic calc use case'
     g2 = nx.MultiDiGraph()
     g2.add_nodes_from(['0', 'num', 'zero', 'period', 'op', 'eql', 'del'])
-    g2.add_edges_from([('0', 'num'), ('0', 'zero'), ('num', 'eql'), ('zero', 'eql'), ('eql', '0'), ('del', '0')])
+    g2.add_edges_from([('0', 'num'), ('0', 'zero'), ('0', 'period'), ('num', 'eql'), ('zero', 'eql'), ('eql', '0'), ('del', '0')])
     multiconnect(g2,'num','zero')
     multiconnect(g2, 'num', 'op')
     multiconnect(g2, 'num', 'period')
     multiconnect(g2, 'op', 'zero')
     multiconnect(g2, 'period', 'zero')
-    g2.add_edges_from([('period', 'del'), ('num', 'del'), ('zero', 'del'), ('op', 'del')])
+    g2.add_edges_from([('num', 'del')])
     ppaths = getPrimePaths(g2)
     for path in ppaths:
         print path
@@ -160,5 +164,4 @@ def createTestGraph():
     return g2
 
 if __name__ == "__main__":
-    createTestGraphs()
     unittest.main()
