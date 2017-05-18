@@ -133,9 +133,7 @@ def multiconnect(g, n1, n2):
 
 def getPrimePaths(g):
     paths = []
-    paths.extend(nx.all_simple_paths(g, '0', 'num'))
     paths.extend(nx.all_simple_paths(g, 'num', 'num'))
-    paths.extend(nx.all_simple_paths(g, 'num', '0'))
     return removeSubPaths(paths)
 
 def clickNum(driver):

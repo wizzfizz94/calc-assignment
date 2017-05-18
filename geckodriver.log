@@ -1460,3 +1460,21 @@ Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with rea
 JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
 JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
 JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+1495097288517	geckodriver	INFO	Listening on 127.0.0.1:60885
+1495097289583	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495097290596	Marionette	INFO	Listening on port 42221
+1495097290714	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495097341981	geckodriver	INFO	Listening on 127.0.0.1:37589
+1495097343046	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495097344046	Marionette	INFO	Listening on port 35062
+1495097344157	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495097398736	geckodriver	INFO	Listening on 127.0.0.1:35719
+1495097399794	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495097400848	Marionette	INFO	Listening on port 44113
+1495097400959	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
