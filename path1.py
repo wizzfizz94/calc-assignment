@@ -24,8 +24,15 @@ class Path1(unittest.TestCase):
         driver.get(self.base_url + "/units/CITS5501/Assignments/calculator.html")
         script = 'document.styleSheets[0].insertRule("button:focus {background-color: red !important;}", 0 )'
         driver.execute_script(script)
+
         g = createTestGraph()
         ppaths = getPrimePaths(g)
+        for i, path in enumerate(ppaths):
+            print 'Test %d %s' % (i, path)
+        print '# of primepaths = ' + str(len(ppaths))
+        nx.draw_networkx(g)
+        plt.show()
+
         last = ppaths[0][0]
         executeCmd(driver, last)
         for i in range(len(ppaths)):
@@ -102,23 +109,6 @@ def genEdgesToRootNodes(nodes):
             (x, 'del'), (x, '.'), (x, '=')])
     return edges
 
-
-def createDeleteGraph():
-    g = nx.Graph()
-    g.add_edges_from(genEdgesToRootNodes(['num', 'op', 'del', '.', '=']),
-                     name='concat('')')
-    return g
-
-def createOperatorGraph():
-    g = nx.Graph()
-    g.add_node('op')
-    g.add_node('output')
-    g.add_edge('op', 'operator', name=None)
-    g.add_edges_from(genEdgesToRootNodes(['op']), name='concat('')')
-    g.add_edges_from(genEdgesToRootNodes(['output']), name='concat(operator)')
-    g.add_edges_from(genEdgesToRootNodes(['output']), name=None)
-    return g
-
 def makeGraph(nodes):
     g = nx.Graph()
     g.add_nodes_from(nodes)
@@ -154,13 +144,6 @@ def createTestGraph():
     multiconnect(g2, 'op', 'zero')
     multiconnect(g2, 'period', 'zero')
     g2.add_edges_from([('num', 'del')])
-    ppaths = getPrimePaths(g2)
-    for path in ppaths:
-        print path
-    print '# of primepaths = ' + str(len(ppaths))
-    nx.draw_networkx(g2)
-    labels = {'0': '0', 'num': 'num', 'op': 'op'}
-    plt.show()
     return g2
 
 if __name__ == "__main__":
