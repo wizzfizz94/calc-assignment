@@ -57,8 +57,7 @@ def is_a_in_x(A, X):
     if A == X[i:i+len(A)]: return True
   return False
 
-def getPrimePaths(sp):
-    # primePaths = [row[:] for row in simplePaths]
+def removeSubPaths(sp):
     # mark all sub paths as None
     for i in range(len(sp)):
         for j in range(len(sp)):
@@ -94,39 +93,67 @@ def createOperatorGraph():
     g.add_edges_from(genEdgesToRootNodes(['output']), name=None)
     return g
 
-def
-
-def createTestGraphs():
-    # user performs basic calc
-
-    # user performs decimal calc
-
-    # user perofms mult-step calc
-
-    # user clears screen with del
-
-    # user alerted after inputing to many numbers
-
-    # invalid inputs are handled
-    
+def makeGraph(nodes):
     g = nx.Graph()
-    nodes = ['num1', 'num2', 'eql', 'zero', 'op']
     g.add_nodes_from(nodes)
     for i in nodes:
         for j in nodes:
             g.add_edge(i,j)
-    print g.edges()
-    simplePaths = list(nx.all_simple_paths(g, source='num1', target='eql'))
-    # for i in nodes:
-    #     simplePaths.extend(list(nx.all_simple_paths(g, source='num', target=i)))
-    primePaths = getPrimePaths(simplePaths)
-    for path in primePaths:
-        print path
-    print len(primePaths)
-    print len(simplePaths)
-    nx.draw(g)
-    plt.show()
     return g
+
+def multiconnect(g, n1, n2):
+    g.add_edge(n1,n2)
+    g.add_edge(n2,n1)
+
+def getPrimePaths(g):
+    paths = []
+    for i in g.nodes_iter():
+        for j in g.nodes_iter():
+            paths.extend(nx.all_simple_paths(g,i,j))
+    return removeSubPaths(paths)
+
+def createTestGraphs():
+    # print 'user performs basic calc'
+    # g1 = nx.Graph()
+    # g1.add_nodes_from(['start','num1','num2','num3','num4','op','eql'])
+    # g1.add_edges_from([('start','num1'),('num1','num2'),('num2','op'),('op','num3'),
+    #                    ('num3','num4'),('num4','eql')])
+    # for x in ['num1','num3','num4']:
+    #     g1.add_edge()
+    # for path in nx.all_simple_paths(g1,'num1','eql'):
+    #     print path
+
+
+    print 'user performs decimal calc'
+    g2 = nx.MultiDiGraph()
+    g2.add_nodes_from(['0', 'num', 'zero', 'period', 'op', 'eql'])
+    g2.add_edges_from([('0', 'num'), ('0', 'zero'), ('num', 'eql'), ('zero', 'eql'), ('eql', '0')])
+    multiconnect(g2,'num','zero')
+    multiconnect(g2, 'num', 'op')
+    multiconnect(g2, 'num', 'period')
+    multiconnect(g2, 'op', 'zero')
+    multiconnect(g2, 'period', 'zero')
+    ppaths = getPrimePaths(g2)
+    for path in ppaths:
+        print path
+    print '# of primepaths = ' + str(len(ppaths))
+    nx.draw_networkx(g2)
+    labels = {'0': '0', 'num': 'num', 'op': 'op'}
+    plt.show()
+
+
+
+
+    # print 'user perofms mult-step calc'
+    # g3 = makeGraph(['num1', 'num2', 'num3', 'op', 'op', 'eql'])
+    # for path in nx.all_simple_paths(g3,'num1','eql'):
+    #     print path
+    # print 'user clears screen with del'
+    # g4 = makeGraph(['num', 'period', 'op', 'del'])
+    # for path in nx.all_simple_paths(g4,'num','del'):
+    #     print path
+    # user alerted after inputing to many numbers
+    # g5 = makeGraph(['num1', 'num2', ])
 
 if __name__ == "__main__":
     createTestGraphs()
