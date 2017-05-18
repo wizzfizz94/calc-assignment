@@ -8,6 +8,8 @@ from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
 import networkx as nx
 import matplotlib.pyplot as plt
+import random
+import time
 
 class Path1(unittest.TestCase):
     def setUp(self):
@@ -20,11 +22,29 @@ class Path1(unittest.TestCase):
     def test_path1(self):
         driver = self.driver
         driver.get(self.base_url + "/units/CITS5501/Assignments/calculator.html")
-        ele = driver.find_element_by_xpath("//button[@value='8']").click()
-        driver.find_element_by_xpath("//button[@value='+']").click()
-        driver.find_element_by_xpath("//button[@value='9']").click()
-        driver.find_element_by_id("eqn-bg").click()
-        self.assertEqual("17", driver.find_element_by_id("result").text)
+        g = createTestGraph()
+        ppaths = getPrimePaths(g)
+        last = None
+        for i in range(len(ppaths)):
+            if ppaths[i][0] == last || last == None:
+                for j in range(len(ppaths[i])):
+                    if ppaths[i][j] == 'num':
+                        clickNum(driver)
+                    elif ppaths[i][j] == 'op':
+                        clickOp(driver)
+                    elif ppaths[i][j] == 'eql':
+                        driver.find_element_by_id("eqn-bg").click()
+                    elif ppaths[i][j] == 'del':
+                        driver.find_element_by_id("delete").click()
+                    elif ppaths[i][j] == 'zero':
+                        driver.find_element_by_css_selector("div.rows > #delete").click()
+                    elif ppaths[i][j] == 'period':
+                        driver.find_element_by_xpath("//button[@value='.']").click()
+                    elif ppaths[i][j] == '0':
+                        time.sleep(1)
+                    if j == len(ppaths[i])-1:
+                        last = ppaths[i][j]
+                    time.sleep(0.5)
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
@@ -112,19 +132,15 @@ def getPrimePaths(g):
             paths.extend(nx.all_simple_paths(g,i,j))
     return removeSubPaths(paths)
 
-def createTestGraphs():
-    # print 'user performs basic calc'
-    # g1 = nx.Graph()
-    # g1.add_nodes_from(['start','num1','num2','num3','num4','op','eql'])
-    # g1.add_edges_from([('start','num1'),('num1','num2'),('num2','op'),('op','num3'),
-    #                    ('num3','num4'),('num4','eql')])
-    # for x in ['num1','num3','num4']:
-    #     g1.add_edge()
-    # for path in nx.all_simple_paths(g1,'num1','eql'):
-    #     print path
+def clickNum(driver):
+    driver.find_element_by_xpath("//button[@value='"+str(random.randint(0,9))+"']").click()
 
+def clickOp(driver):
+    ops = ['+', '/', '%', '-', '*']
+    driver.find_element_by_xpath("//button[@value='"+random.choice(ops)+"']").click()
 
-    print 'user performs decimal calc'
+def createTestGraph():
+    print 'graph for basic calc use case'
     g2 = nx.MultiDiGraph()
     g2.add_nodes_from(['0', 'num', 'zero', 'period', 'op', 'eql', 'del'])
     g2.add_edges_from([('0', 'num'), ('0', 'zero'), ('num', 'eql'), ('zero', 'eql'), ('eql', '0'), ('del', '0')])
@@ -141,20 +157,7 @@ def createTestGraphs():
     nx.draw_networkx(g2)
     labels = {'0': '0', 'num': 'num', 'op': 'op'}
     plt.show()
-
-
-
-
-    # print 'user perofms mult-step calc'
-    # g3 = makeGraph(['num1', 'num2', 'num3', 'op', 'op', 'eql'])
-    # for path in nx.all_simple_paths(g3,'num1','eql'):
-    #     print path
-    # print 'user clears screen with del'
-    # g4 = makeGraph(['num', 'period', 'op', 'del'])
-    # for path in nx.all_simple_paths(g4,'num','del'):
-    #     print path
-    # user alerted after inputing to many numbers
-    # g5 = makeGraph(['num1', 'num2', ])
+    return g2
 
 if __name__ == "__main__":
     createTestGraphs()
