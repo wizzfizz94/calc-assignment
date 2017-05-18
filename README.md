@@ -12,6 +12,8 @@ Requirements
 		selenium IDE for firefox
 
 	geckodriver
+	
+		https://github.com/mozilla/geckodriver/releases
 
 	python
 
