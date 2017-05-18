@@ -22,6 +22,8 @@ class Path1(unittest.TestCase):
     def test_path1(self):
         driver = self.driver
         driver.get(self.base_url + "/units/CITS5501/Assignments/calculator.html")
+        script = 'document.styleSheets[0].insertRule("button:focus {background-color: red !important;}", 0 )'
+        driver.execute_script(script)
         g = createTestGraph()
         ppaths = getPrimePaths(g)
         last = ppaths[0][0]
@@ -33,7 +35,7 @@ class Path1(unittest.TestCase):
                     if j == len(ppaths[i])-1:
                         last = ppaths[i][j]
                         ppaths[i] = None
-                    time.sleep(0.5)
+                    time.sleep(1)
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)

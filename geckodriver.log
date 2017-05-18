@@ -1134,3 +1134,272 @@ Full stack:
 [Child 7708] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
 [Child 7708] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
 [Child 7708] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+1495084571189	geckodriver	INFO	Listening on 127.0.0.1:43629
+1495084572272	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495084574084	Marionette	INFO	Listening on port 45902
+1495084574321	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8526] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 8526] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 8526] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+1495084617418	geckodriver	INFO	Listening on 127.0.0.1:45272
+1495084618546	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495084620074	Marionette	INFO	Listening on port 45721
+1495084620203	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+1495084687239	Marionette	INFO	New connections will no longer be accepted
+[Child 8664] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 8664] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 8664] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+1495084814959	geckodriver	INFO	Listening on 127.0.0.1:51669
+1495084816071	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495084817355	Marionette	INFO	Listening on port 43622
+1495084817490	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+1495084886649	Marionette	INFO	New connections will no longer be accepted
+[Child 8974] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 8974] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 8974] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+1495086237656	geckodriver	INFO	Listening on 127.0.0.1:57390
+1495086238704	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495086239860	Marionette	INFO	Listening on port 41434
+1495086239977	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495086242814	Marionette	INFO	New connections will no longer be accepted
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 12051] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 12051] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 12051] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+1495086343575	geckodriver	INFO	Listening on 127.0.0.1:60571
+1495086344648	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495086345663	Marionette	INFO	Listening on port 34455
+1495086345781	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 12227] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 12227] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 12227] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+1495086476824	geckodriver	INFO	Listening on 127.0.0.1:39943
+1495086476898	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495086477897	Marionette	INFO	Listening on port 42809
+1495086478009	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495086502518	Marionette	INFO	New connections will no longer be accepted
+[Child 12474] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 12474] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+1495086606113	geckodriver	INFO	Listening on 127.0.0.1:33830
+1495086607178	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495086608247	Marionette	INFO	Listening on port 40755
+1495086608354	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1495087947542	geckodriver	INFO	Listening on 127.0.0.1:59183
+1495087948604	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495087950831	Marionette	INFO	Listening on port 43447
+1495087951014	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495087973759	Marionette	INFO	New connections will no longer be accepted
+[Child 15116] WARNING: pipe error (17): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+[Child 15116] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 15116] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x900001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
+
+1495088309504	geckodriver	INFO	Listening on 127.0.0.1:45796
+1495088310586	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495088312049	Marionette	INFO	Listening on port 40988
+1495088313059	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495088331775	Marionette	INFO	New connections will no longer be accepted
+[Child 16070] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 16070] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1495088551272	geckodriver	INFO	Listening on 127.0.0.1:49893
+1495088552358	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495088554365	Marionette	INFO	Listening on port 44374
+1495088554527	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495088632028	geckodriver	INFO	Listening on 127.0.0.1:44493
+1495088633123	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495088635877	Marionette	INFO	Listening on port 39089
+1495088636068	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495088640459	Marionette	INFO	New connections will no longer be accepted
+[Child 16766] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 16766] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1495090270000	geckodriver	INFO	Listening on 127.0.0.1:55051
+1495090271173	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495090274443	Marionette	INFO	Listening on port 32794
+1495090275370	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+1495090347086	Marionette	INFO	New connections will no longer be accepted
+[Child 18702] WARNING: pipe error (17): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 18702] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 18702] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+1495090534285	geckodriver	INFO	Listening on 127.0.0.1:52719
+1495090535467	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495090538397	Marionette	INFO	Listening on port 35643
+1495090539853	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+1495090609257	Marionette	INFO	New connections will no longer be accepted
+[Child 19032] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 19032] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+1495090658504	geckodriver	INFO	Listening on 127.0.0.1:35028
+1495090659618	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495090661527	Marionette	INFO	Listening on port 39960
+1495090661696	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+[Child 19194] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4C0001,name=PCrashReporter::Msg_AnnotateCrashReport) Channel error: cannot send/recv
+
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=73.6121) 
+###!!! [Child][MessageChannel] Error: (msgtype=0x4600D5,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
