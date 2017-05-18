@@ -1403,3 +1403,60 @@ Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with rea
 ###!!! [Child][MessageChannel] Error: (msgtype=0x4600D5,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
 
 [GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1495096332463	geckodriver	INFO	Listening on 127.0.0.1:43355
+1495096333539	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495096335212	Marionette	INFO	Listening on port 41783
+1495096335372	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495096436369	geckodriver	INFO	Listening on 127.0.0.1:47791
+1495096437420	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495096438827	Marionette	INFO	Listening on port 39769
+1495096438953	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495096458977	Marionette	INFO	New connections will no longer be accepted
+[Child 32514] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 32514] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 32514] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+1495096588234	geckodriver	INFO	Listening on 127.0.0.1:53285
+1495096589298	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495096590342	Marionette	INFO	Listening on port 39615
+1495096590476	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495096601961	Marionette	INFO	New connections will no longer be accepted
+[Child 427] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 427] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+[Child 427] ###!!! ABORT: Aborting on channel error.: file /build/firefox-_sZpJp/firefox-52.0.2+linuxmint1+serena/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1495096639275	geckodriver	INFO	Listening on 127.0.0.1:55601
+1495096640341	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495096641355	Marionette	INFO	Listening on port 38181
+1495096641471	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement
+JavaScript error: http://teaching.csse.uwa.edu.au//units/CITS5501/Assignments/calculator.js, line 1: SyntaxError: missing ; before statement

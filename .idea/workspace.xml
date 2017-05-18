@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63c53c6f-a926-4088-93d1-0b623cd85b48" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geckodriver.log" afterPath="$PROJECT_DIR$/geckodriver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/path1.py" afterPath="$PROJECT_DIR$/path1.py" />
     </list>
@@ -25,8 +24,8 @@
       <file leaf-file-name="path1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/path1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="114" column="24" lean-forward="true" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+            <state relative-caret-position="177">
+              <caret line="135" column="52" lean-forward="true" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
               <folding>
                 <element signature="e#24#54#0" expanded="true" />
               </folding>
@@ -97,7 +96,7 @@
       <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
         <entry file="file:///usr/lib/python2.7/unittest/case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
+            <state relative-caret-position="6174">
               <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
               <folding />
             </state>
@@ -139,8 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -155,6 +152,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,18 +358,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_Path1 - 2017.05.18 at 13h 21m 26s.xml">
-      <configuration name="Unittests in Path1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Path1 - 2017.05.18 at 13h 44m 02s.xml">
-      <configuration name="Unittests in Path1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Path1 - 2017.05.18 at 13h 47m 50s.xml">
-      <configuration name="Unittests in Path1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Path1 - 2017.05.18 at 13h 48m 22s.xml">
-      <configuration name="Unittests in Path1" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_Path1 - 2017.05.18 at 14h 12m 53s.xml">
       <configuration name="Unittests in Path1" configurationId="tests" />
     </history-entry>
@@ -387,6 +374,18 @@
       <configuration name="Unittests in Path1" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_Path1 - 2017.05.18 at 14h 58m 56s.xml">
+      <configuration name="Unittests in Path1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Path1 - 2017.05.18 at 16h 34m 06s.xml">
+      <configuration name="Unittests in Path1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Path1 - 2017.05.18 at 16h 34m 19s.xml">
+      <configuration name="Unittests in Path1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Path1 - 2017.05.18 at 16h 36m 42s.xml">
+      <configuration name="Unittests in Path1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Path1 - 2017.05.18 at 16h 39m 12s.xml">
       <configuration name="Unittests in Path1" configurationId="tests" />
     </history-entry>
   </component>
@@ -456,6 +455,72 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/path1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/path2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/networkx/convert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2232">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/networkx/classes/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15336">
+          <caret line="855" column="0" lean-forward="false" selection-start-line="855" selection-start-column="0" selection-end-line="855" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2016.3/system/python_stubs/-1247972723/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1944">
+          <caret line="108" column="25" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16884">
+          <caret line="973" column="0" lean-forward="false" selection-start-line="973" selection-start-column="0" selection-end-line="973" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6174">
+          <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/path1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -706,7 +771,7 @@
     </entry>
     <entry file="file:///usr/lib/python2.7/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
+        <state relative-caret-position="6174">
           <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
           <folding />
         </state>
@@ -714,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/path1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="114" column="24" lean-forward="true" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+        <state relative-caret-position="177">
+          <caret line="135" column="52" lean-forward="true" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
           <folding>
             <element signature="e#24#54#0" expanded="true" />
           </folding>
