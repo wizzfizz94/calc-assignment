@@ -126,13 +126,14 @@ def createTestGraphs():
 
     print 'user performs decimal calc'
     g2 = nx.MultiDiGraph()
-    g2.add_nodes_from(['0', 'num', 'zero', 'period', 'op', 'eql'])
-    g2.add_edges_from([('0', 'num'), ('0', 'zero'), ('num', 'eql'), ('zero', 'eql'), ('eql', '0')])
+    g2.add_nodes_from(['0', 'num', 'zero', 'period', 'op', 'eql', 'del'])
+    g2.add_edges_from([('0', 'num'), ('0', 'zero'), ('num', 'eql'), ('zero', 'eql'), ('eql', '0'), ('del', '0')])
     multiconnect(g2,'num','zero')
     multiconnect(g2, 'num', 'op')
     multiconnect(g2, 'num', 'period')
     multiconnect(g2, 'op', 'zero')
     multiconnect(g2, 'period', 'zero')
+    g2.add_edges_from([('period', 'del'), ('num', 'del'), ('zero', 'del'), ('op', 'del')])
     ppaths = getPrimePaths(g2)
     for path in ppaths:
         print path
