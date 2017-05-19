@@ -31,7 +31,6 @@ class Path1(unittest.TestCase):
             print 'Test %d %s' % (i, path)
         print '# of primepaths = ' + str(len(ppaths))
         nx.draw_networkx(g)
-        plt.show()
 
         last = ppaths[0][0]
         executeCmd(driver, last)
@@ -43,6 +42,7 @@ class Path1(unittest.TestCase):
                         last = ppaths[i][j]
                         ppaths[i] = None
                     time.sleep(1)
+        plt.show()
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)

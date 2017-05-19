@@ -1,0 +1,5 @@
+#!/bin/sh
+
+python main.py
+
+mut.py --target calculator --unit-test CalcTester
